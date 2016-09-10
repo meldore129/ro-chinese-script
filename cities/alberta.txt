@@ -22,39 +22,39 @@
 
 alberta,97,51,0	script	Fabian	84,{
 	mes "[Fabian]";
-	mes "Man... When you travel all around the world, you'll hear of some crazy things.";
+	mes "先生... 當你走遍整個世界，你會聽到一些很瘋狂的事情.";
 	next;
 	mes "[Fabian]";
-	mes "Once, I heard that there are Cards which contain the power of monsters. If someone happens to get their hands on a card, they'll be able to use that monster's power.";
+	mes "曾經, 我聽說過含有魔物力量的卡片. 如果有人剛好得到卡片, 那麼他將可以使用魔物的力量.";
 	next;
 	mes "[Fabian]";
-	mes "I'm guessing it's some sort of fad or scam, where they make you collect all the cards or whatever. I mean, how can a card really hold the power of a monster?!";
+	mes "我猜，這是最近流行的風潮，或者騙局, 讓你去蒐集所有的卡片. 我是指,一張卡片真的能擁有魔物的力量?!";
 	next;
 	mes "[Fabian]";
-	mes "Seriously...";
+	mes "認真點...";
 	close;
 }
 
 alberta,53,39,0	script	Steiner	100,{
 	mes "[Steiner]";
-	mes "Oh...!";
-	mes "Welcome to Alberta,";
-	mes "young adventurer!";
+	mes "噢...!";
+	mes "歡迎來到Alberta,";
+	mes "年輕的冒險者!";
 	next;
 	mes "[Steiner]";
-	mes "Pardon me if I seem distracted. I'm milling about, trying to make a plan. You see, I hear that there is a store in Geffen that sells armor that is resistant to magic.";
+	mes "如果我分心的話，請原諒我. 我轉來轉去, 嘗試去擬定一個計畫. 你瞧, 我聽說在Geffen的商店出售的裝甲擁有魔法的抗性.";
 	next;
 	mes "[Steiner]";
-	mes "If I buy a lot of them in bulk, and then resell them here for a higher price...";
+	mes "如果我大量去購買它們, 然後再這裡以更高的價轉賣...";
 	close;
 }
 
 alberta_in,20,183,0	script	Chad	1_M_03,{
 	mes "[Chad]";
-	mes "People say the legendary weapon Gungnir never misses its target. I wonder if it's possibly true...";
+	mes "人們說，傳說中的武器Gungnir從來不會錯過它的鎖定目標. 我想這是否為真...";
 	next;
 	mes "[Chad]";
-	mes "People also say that babies are assembled by the storks before delivery, girls dig guys who act like jerks, and that Santa Claus exists! But only in Lutie.";
+	mes "人們也說過 that babies are assembled by the storks before delivery, girls dig guys who act like jerks, and that Santa Claus exists! But only in Lutie.";
 	next;
 	mes "[Chad]";
 	mes "I wonder...";
