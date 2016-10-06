@@ -35,19 +35,19 @@
 // Izlude
 //============================================================
 -	script	::Sailor_izlude	-1,{
-	mes "[Sailor]";
-	mes "Hey everybody!";
-	mes "Attention, attention!";
-	mes "Come and ride the wind";
-	mes "on a fascinating Ship!";
-	mes "Hurry, hurry!";
+	mes "[船員]";
+	mes "嘿 大夥兒!";
+	mes "注意, 注意!";
+	mes "讓我們乘風而去";
+	mes "就在這艘迷人的船上!";
+	mes "快, 快啊!";
 	next;
-	switch(select("Byalan Island -> 150 Zeny.:Alberta Marina  -> 500 Zeny.:Cancel.")) {
+	switch(select("柏伊亞嵐島 -> 150 金幣.:艾爾貝塔 港口  -> 500 金幣.:結束.")) {
 	case 1:
 		if (Zeny < 150) {
-			mes "[Sailor]";
-			mes "150 Zeny!";
-			mes "Only 150 Zeny to ride!";
+			mes "[船員]";
+			mes "你身上不足 150 金幣!";
+			mes "必須要有150金幣才能搭乘!";
 			close;
 		}
 		set Zeny, Zeny - 150;
@@ -55,9 +55,9 @@
 		end;
 	case 2:
 		if (Zeny < 500) {
-			mes "[Sailor]";
-			mes "500 Zeny!";
-			mes "Only 500 Zeny to ride!";
+			mes "[船員]";
+			mes "你身上不足 500 金幣!";
+			mes "必須要有500金幣才能搭乘!";
 			close;
 		}
 		set Zeny, Zeny - 500;
@@ -70,8 +70,8 @@
 
 -	script	::Bonne_izlude	-1,{
 	mes "[Bonne]";
-	mes "Greetings!";
-	mes "Izlude welcomes you.";
+	mes "(向你打了招呼)!";
+	mes "依斯魯德歡迎你.";
 	next;
 	mes "[Bonne]";
 	mes "Izlude is the satellite city of Prontera, capital of the Rune-Midgarts kingdom.";
@@ -124,25 +124,25 @@
 }
 
 -	script	::Cuskoal_izlude	-1,{
-	mes "[Cuskoal]";
+	mes "[庫斯可爾]";
 	switch(rand(2)) {
 	case 1:
-		mes "The Arena here is THE place for capable young people from all over the Rune-Midgarts Kingdom to challenge themselves and test their skills.";
+		mes "這裡的競技場，是為了讓米德加茲王國內有能力的年輕人，挑戰並測試自己的能力時所來拜訪的地方.";
 		next;
-		mes "[Cuskoal]";
-		mes "You can battle with monsters of differing levels. So, the number of stages you survive will be a testiment to your battle prowess.";
+		mes "[庫斯可爾]";
+		mes "按照等級別會出現魔物與你決鬥. 關卡等級數，便是你戰鬥英勇的證明.";
 		next;
-		mes "[Cuskoal]";
-		mes "So, whaddya say?";
+		mes "[庫斯可爾]";
+		mes "所以, 想不想來試一試?";
 		close;
 	default:
-		mes "The pubs in Prontera are always full of people from local areas and from out-of-town. It can get pretty busy.";
+		mes "在普隆德拉的酒店裡，平時都集滿了市民和外地來的人. 非常熱鬧.";
 		next;
-		mes "[Cuskoal]";
-		mes "It's a pretty good place to stop by for general information and to listen to rumors.";
+		mes "[庫斯可爾]";
+		mes "如果你想得知普通情報以及打聽些小道消息，這地方非常值得造訪.";
 		next;
-		mes "[Cuskoal]";
-		mes "So if you listen carefully, you just might get lucky and learn some very useful information for yourself.";
+		mes "[庫斯可爾]";
+		mes "若你能夠好好地打聽一番, 極有可能獲得一些非常有用的情報呢.";
 		close;
 	}
 }
@@ -255,54 +255,43 @@
 }
 
 -	script	::Red_izlude	-1,{
-	mes "[Red]";
-	mes "The only skill that's needed for a Swordman is ^FF2400Bash^000000! Bash, Bash and ONLY ^FF2400Bash^000000! No need to waste time and effort for smaller skills! Everything else is for cowards and wusses!";
+	mes "[瑞德]";
+	mes "劍士只需要一種技能，那就是 is ^FF2400狂擊^000000! 狂擊, 狂擊 以及 ^FF2400狂擊^000000! 沒有必要浪費時間為著弱小的技能而努力! 其餘的都是懦夫及膽小鬼才會使用!";
 	next;
-	mes "[Cebalis]";
-	mes "What are you talking about!? The ideal Swordman resolutely stands alone, surrounded by countless enemies and smashing them all with one awesome attack.";
+	mes "[西發利斯]";
+	mes "你在說什麼啊!? 不管怎麼說劍士最大的希望是，獨自衝進戰場獨當一面的，這時候需要的是怒爆~!";
+	mes "除了主動攻擊我的傢伙之外，還有四周圍徘徊的傢伙，在我怒爆時讓他們得到傷害，本人雖然也會受到一點損失，身為劍士對小小的損失是可以承擔的!";
 	next;
-	mes "[Cebalis]";
-	mes "^EE0000MAGNUM BREAK!^000000";
-	mes "That's right, Magnum Break";
-	mes "is the skill that does";
-	mes "the job right~!!";
+	mes "[瑞德]";
+	mes "所以說你這傢伙是白癡呀!";
+	mes "什麼是男子漢的希望啊?";
+	mes "讓自己造成損失去冒這種風險真是白癡，";
+	mes "你已經變得很脆弱了，上次你用錯這技能，";
+	mes "無意間打到一群路過的波利，造成一群波利衝過來，嚇得逃跑，我還記得一清二楚啊!";
 	next;
-	mes "[Cebalis]";
-	mes "Well... Sometimes the explosive damage might accidentally hit some wandering monsters, and those guys end up coming after you, but that's a risk a Swordman should be willing to take!!";
-	next;
-	mes "[Red]";
-	mes "That's exactly why you're dumb, you idiot! And what's this about the 'the ideal Swordman?' I still remember the last time you used Magnum Break...";
-	next;
-	mes "[Red]";
-	mes "You ended up running away from all those monsters you hit with that stupid skill! Weakling! All those Porings around you got hit and they all tried to kill you. ";
-	next;
-	mes "[Cebalis]";
-	mes "Hmpf. As I recall, you were running away too, apparently too busy to use your precious Bash. In any case, Magnum Break is THE skill for a Swordman~!!";
-	next;
-	mes "[Cebalis]";
-	mes "Something simplistic like Bash";
-	mes "is just one of the little steps towards Magnum Break.";
+	mes "[西發利斯]";
+	mes "那、那種事...";
+	mes "就忘記吧，不管怎樣，是劍士的話，就善用怒爆吧!!!";
+	mes "狂擊，只是修練怒爆中間的過程而已";
 	next;
 	mes "[Red]";
-	mes "Oh man~";
-	mes "Hey, I know you just";
-	mes "heard everything.";
-	mes "So what do you think?";
+	mes "喂...那邊在聽我講話的人... 對!";
+	mes "就是你，你認為怎麼樣啊?";
+	mes "狂擊和給予範圍攻擊傷害的怒爆!";
+	mes "哪一個比較優秀呢?";
 	next;
-	mes "[Red]";
-	mes "Which one do you think is better? The critical damage skill, ^FF2400Bash^000000, or the Splash damage skill, ^EE0000Magnum Break^000000?";
 	next;
-	if (select("Bash:Magnum Break") == 1)  {
+	if (select("狂擊:怒爆") == 1)  {
 		if (BaseClass == Job_Swordman) {
 			mes "[Red]";
-			mes "Hahahaha!!! I knew you'd see things my way!! You ARE a great guy!! Undoubtedly, only ^FF2400Bash^000000 suits a Swordman. Please tell that to this BONEHEAD over here~ Hahaha!";
+			mes "哈哈哈哈!!!我就知道你的眼光跟我一樣!! 你是一個傑出的傢伙!!無庸置疑, 只有 ^FF2400狂擊^000000 適合劍士. 請告訴這位石頭腦袋吧 哈哈哈!";
 			next;
 			mes "[Red]";
-			mes "Hmm, let me give you a bit of advice. After you achieve level 5 'Bash', the amount of SP consumed by the skill increases greatly, so watch out for your SP.";
+			mes "嗯, 我來給你點小建議吧. 當你 '狂擊' 點到5之後, SP點數的消耗將會提高, 所以記得注意一下你的SP.";
 			close;
 		}
 		mes "[Red]";
-		mes "Hahahaha!! See!? Someone who pursues a different job agrees with me~! You really are a great guy! Hahaha!! Undoubtedly, only ^FF2400Bash^000000 suits a Swordman. Please tell that to this NIMROD over here~ Hahaha!";
+		mes "哈哈哈哈!! See!? Someone who pursues a different job agrees with me~! You really are a great guy! Hahaha!! Undoubtedly, only ^FF2400Bash^000000 suits a Swordman. Please tell that to this NIMROD over here~ Hahaha!";
 		close;
 	}
 	if (BaseClass == Job_Swordman) {
