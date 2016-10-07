@@ -19,7 +19,7 @@
 //============================================================
 -	script	::Sea_Captain_amatsu	-1,{
 	mes "[Walter Moers]";
-	mes "Hey, there.";
+	mes "你好啊.";
 	mes "Have you ever heard that there";
 	mes "are totally different countries";
 	mes "than the Rune-Midgard Kingdom?";
