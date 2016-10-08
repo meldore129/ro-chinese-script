@@ -45,7 +45,7 @@ yuno,184,173,4	script	Freidrich#juno	729,{
 	else {
 		mes "[Freidrich]";
 		mes "The city of Sages,";
-		mes "^3355FFJuno,^000000 is made of";
+		mes "^3355FF¦¶¿Õ,^000000 is made of";
 		mes "three islands.";
 		next;
 		mes "[Freidrich]";
