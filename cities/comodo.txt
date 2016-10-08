@@ -1,4 +1,4 @@
-//===== rAthena Script =======================================
+﻿//===== rAthena Script =======================================
 //= Comodo Town
 //===== By: ==================================================
 //= rAthena Dev Team
@@ -26,55 +26,47 @@
 
 // Inside Comodo
 //============================================================
-cmd_in02,73,81,4	script	Martine#cmd	48,{
-	mes "[Martine]";
-	mes "Gambling...? The games";
-	mes "provided here in the Comodo";
-	mes "Casino are a higher form of";
-	mes "entertainment than gambling.";
-	mes "Do you know what I mean?";
+cmd_in02,73,81,4	script	馬樂納#cmd	48,{
+	mes "[馬樂納]";
+	mes "賭博?不是賭博!";
+	mes "不要把克魔島的賭博場，當做賭博比喻";
+	mes "這明明是一場一決勝負的比賽，活生生的比賽";
+	mes "能瞭解我的話嗎，朋友?!";
 	next;
-	mes "[Martine]";
-	mes "Granted, I did lose";
-	mes "all of my zeny playing";
-	mes "in this Casino, but I have";
-	mes "no regrets. I'll simply earn";
-	mes "more money, then blow it all";
-	mes "again. Or I just might win big!";
+	mes "[馬樂納]";
+	mes "啊啊...不要用這種眼光看我...";
+	mes "...好了 好了! 知道了...";
+	mes "我在這克魔島玩過很多種遊戲，也讓金幣消耗殆盡。不過...我不後悔";
 	next;
-	mes "[Martine]";
-	mes "Bwahahahaahah~!";
-	mes "Yes, I can only lose so";
-	mes "many times until I hit the";
-	mes "jackpot! You see, you see?";
-	mes "I'm playing the freakin' odds.";
+	mes "[馬樂納]";
+	mes "今天是今天、明天是明天!";
+	mes "我再到克魔島其他區域打倒魔物，賺取一些金幣";
+	mes "這樣又可以快樂的玩";
+	mes "哈哈哈...";
 	close;
 }
 
-cmd_in02,48,55,4	script	Scoursege#cmd	51,{
-	mes "[Scoursege]";
-	mes "Damn it! Where did that";
-	mes "guy go? He promised me that";
-	mes "he'd easily double my money!";
-	mes "Wait. Oh, wait. Oh... Oh no...";
+cmd_in02,48,55,4	script	斯庫世基#cmd	51,{
+	mes "[斯庫世基]";
+	mes "有個向我「借了些金幣」的男人...到底躲到那裡去了...";
+	mes "哎~明明講好說會幫我增值好幾倍的";
+	mes "不要緊嗎不要緊嗎?";
 	next;
-	mes "[Scoursege]";
-	mes "Don't tell me that I just got";
-	mes "conned out of my money!";
-	mes "Oh no! Still, I better report";
-	mes "this to the proper authorities,";
-	mes "no matter how ashamed I feel...";
+	mes "[斯庫世基]";
+	mes "我是不是被騙了...";
+	mes "我被騙了嗎...?";
+	mes "那...那麼...";
+	mes "哇哇哇哇哇!!";
 	close;
 }
 
-cmd_in02,64,43,4	script	Roberto#cmd	709,{
-	mes "[Roberto]";
-	mes "Heh heh heh...";
-	mes "Whaaaat a gullible";
-	mes "guy. I took his money";
-	mes "so easily! I mean, I didn't";
-	mes "even come up with that great";
-	mes "of a lie, and he gave it to me!";
+cmd_in02,64,43,4	script	樂倍樂透#cmd	709,{
+	mes "[樂倍樂透]";
+	mes "因為有一個純真的傢伙";
+	mes "我又賺了一筆私房錢";
+	mes "哈哈哈哈!";
+	mes "喀喀...什麼事?";
+	mes "耶?你第一次看人家數錢嗎...?";
 	close;
 }
 
