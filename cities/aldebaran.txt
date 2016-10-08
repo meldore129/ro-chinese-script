@@ -36,26 +36,45 @@
 //============================================================
 aldebaran,113,70,4	script	Forger Munster#alde	48,{
 	mes "[Munster]";
-	mes "My family used to live in Geffen. So I guess it was natural that we studied forging and eventually became Blacksmiths. Then, we finally moved to this town,";
-	mes "Al De Baran.";
+	mes "我家原本住在吉芬";
+	mes "去年冬天才搬家到艾爾帕蘭";
+	mes "這個地方來...";
 	next;
-	if (select("About ^3355FFItem Upgrade^000000:Quit") == 1) {
+	if (select("關於 ^3355FF製煉^000000:離開") == 1) {
 		mes "[Munster]";
-		mes "My father was a famous blacksmith in Geffen, and he taught me a lot about forging equipment.";
+		mes "我的父親";
+		mes "在以鐵匠聞名的吉芬";
+		mes "也是相當有名氣的名匠";
+		mes "後來才搬到母親的故鄉這來的";
 		next;
 		mes "[Munster]";
-		mes "One of the fundamentals is that the success probability of upgrading an item depends on the level of the weapon.";
+		mes "我有時候也會幫幫父親的忙。";
+		mes "我最近在學習的是";
+		mes "辨別武器等級高低與";
+		mes "冶煉的成功率大小之相關性";
 		next;
 		mes "[Munster]";
-		mes "For level 1 weapons, you may upgrade up to + 7 without the risk of breaking the weapon. Level 2 weapons can be upgraded to +6. Level 3 weapons can be upgraded to +5 safely.";
+		mes "等級1 的武器";
+		mes "可以成功的冶煉到等級7";
+		mes "等級2 的武器可成功的冶煉到等級6";
+		mes "等級3 的武器";
+		mes "則可成功的冶煉到等級5";
+		mes "至於等級4 的武器";
 		next;
 		mes "[Munster]";
-		mes "For level 4 weapons, you can upgrade + 4 without too much risk. As for armors, you can upgrade them to +4. But if the upgrade for the equipment fails, it will be destroyed!";
+		mes "大約可成功的冶煉到等級4";
+		mes "防具之類的話";
+		mes "普通都到等級 4";
+		mes "失敗冶煉的話";
+		mes "武器受不了那強度就破壞了！！";
 		close;
 	}
 	mes "[Munster]";
-	mes "Hmm...";
-	mes "If you get a chance, try to visit my father's workshop here in Al de Baran. If I may say so, he's a pretty talented Blacksmith.";
+	mes "雖然還有許多人";
+	mes "不清楚甚至不知道";
+	mes "我父親的製煉所在哪裡，";
+	mes "但若是在艾爾帕蘭也能打響父親的名號";
+	mes "那就真的太棒了。";
 	close;
 }
 
@@ -1430,7 +1449,7 @@ aldeba_in,88,161,3	script	Kafra Employee#reserve2	4_F_KAFRA3,{
 					getitem 504,30;// White_Potion
 					mes "What a pity!";
 					mes "You got the 4th prize!!";
-					mes "The prize is ^00FF00White_Potion 30��~^000000";
+					mes "The prize is ^00FF00White_Potion 30°³~^000000";
 					next;
 					mes "[Kafra Employee]";
 					mes "The greatest among potions! Use it before you fall into faint~";
