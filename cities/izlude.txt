@@ -140,16 +140,16 @@
 		close;
 	}
 }
-
+//正服已沒有該NPC
 -	script	::Dega_izlude	-1,{
 	mes "[Dega]";
 	switch(rand(3)) {
 	case 1:
-		mes "Mt. Mjornir, located north of Prontera, is a tough";
-		mes "and steep climb.";
+		mes "妙勒尼山脈, 位於普隆德拉的北方,是一座高聳";
+		mes "並且陡峭的攀登處";
 		next;
 		mes "[Dega]";
-		mes "Aside from the dangers of the mountain itself, insanely vicious insects live there too. I mean, they'll just attack you for no reason.";
+		mes "除了山它本身的危險之外, 瘋狂又邪惡的昆蟲魔物也居住於此. 我的意思是，它們會主動攻擊你!";
 		next;
 		mes "[Dega]";
 		mes "If you ever want to visit somewhere past Mt. Mjolnir, then you prepare yourself for the challenge.  Or you could walk around it.";
@@ -219,31 +219,22 @@
 -	script	::Kylick_izlude	-1,{
 	if (!checkre(0) && rand(2)) {
 		mes "[Kylick]";
-		mes "I was thinking, even though the people of Izlude live so close to the ocean...";
+		mes "我在想, 即使依斯魯德的居民，生活上與大海十分密切...";
 		next;
 		mes "[Kylick]";
-		mes "There are other cultures that have completely developed by living off of the sea. Of course, I'm talking about Amatsu.";
+		mes "但也有別的文化靠近海洋，卻完全不以大海發展. 當然, 我說的是 天水之國 櫻花城.";
 		next;
 		mes "[Kylick]";
-		mes "I hear the cuisine there is really good! Although the idea of eating raw fish is new to me, I would love to go there, and try it just once!";
+		mes "我聽說那裏的烹飪技能非常的棒! 直接吃生魚對我來說非常新奇，真想去一次看看啊!";
 		close;
 	} else {
 		mes "[Kylick]";
-		mes "Don't you think Binoculars";
-		mes "are really COOL?! You can";
-		mes "see all sorts of places...!";
+		mes "咳嗽~!";
+		mes "我們依斯魯德島，不只負責陸地上的安全，還負責那寬廣的海洋安全，";
+		next;
 		next;
 		mes "[Kylick]";
-		mes "Here in Izlude, we are responsible for maintaining peace not only on land but also at sea. That's why this city has a huge telescope.";
-		next;
-		mes "[Kylick]";
-		mes "This telecope constantly watches over the sea, so that we can prevent any serious trouble from happening. You know...";
-		next;
-		mes "[Kylick]";
-		mes "An ounce of";
-		mes "prevention is worth";
-		mes "a pound of cure";
-		mes "after all, right?";
+		mes "所以架設大望遠鏡，可以看到遠海，可提前做準備，所有的事情提早做準備，是一定要的啦";
 		close;
 	}
 }
@@ -268,7 +259,7 @@
 	mes "就忘記吧，不管怎樣，是劍士的話，就善用怒爆吧!!!";
 	mes "狂擊，只是修練怒爆中間的過程而已";
 	next;
-	mes "[Red]";
+	mes "[瑞德]";
 	mes "喂...那邊在聽我講話的人... 對!";
 	mes "就是你，你認為怎麼樣啊?";
 	mes "狂擊和給予範圍攻擊傷害的怒爆!";
@@ -277,110 +268,96 @@
 	next;
 	if (select("狂擊:怒爆") == 1)  {
 		if (BaseClass == Job_Swordman) {
-			mes "[Red]";
+			mes "[瑞德]";
 			mes "哈哈哈哈!!!我就知道你的眼光跟我一樣!! 你是一個傑出的傢伙!!無庸置疑, 只有 ^FF2400狂擊^000000 適合劍士. 請告訴這位石頭腦袋吧 哈哈哈!";
 			next;
-			mes "[Red]";
+			mes "[瑞德]";
 			mes "嗯, 我來給你點小建議吧. 當你 '狂擊' 點到5之後, SP點數的消耗，將會隨著技能等級的提升而提高, 所以記得注意一下你的SP.";
 			close;
 		}
-		mes "[Red]";
-		mes "哈哈哈哈!! See!? Someone who pursues a different job agrees with me~! You really are a great guy! Hahaha!! Undoubtedly, only ^FF2400Bash^000000 suits a Swordman. Please tell that to this NIMROD over here~ Hahaha!";
+		mes "[瑞德]";
+		mes "哈哈哈哈!! 你看看連別職業的人都這樣說啊，哈哈!你真是一位很棒的人，";
+		mes "就是說嘛，劍士還是用狂擊比較好，麻煩你教一下那位石頭腦袋好嗎?";
 		close;
 	}
 	if (BaseClass == Job_Swordman) {
-		mes "[Cebalis]";
-		mes "Alright!! ^EE0000Magnum Break^000000 is the BEST!! Now you're talking~!! You know the stuff~ HaHaHa!";
+		mes "[西發利司]";
+		mes "沒錯!! ^EE0000怒爆^000000 是最棒的!! Now you're talking~!! You know the stuff~ HaHaHa!";
 		next;
-		mes "[Cebalis]";
-		mes "You wanna know some useful information? Okay, okay lemme tell ya! Magnum Break has Fire Property.";
+		mes "[西發利司]";
+		mes "你想知道一些更有用的情報? 好吧, 好吧 讓我來告訴你吧! 怒爆是火屬性的技能.";
 		next;
-		mes "[Cebalis]";
-		mes "So it won't be too effective against monsters with the Water property, but this is THE skill to use against Undead and Earth property monsters!";
+		mes "[西發利司]";
+		mes "所以它對於水屬性的魔物作用不大, 但可以對付不死屬性與地屬性的魔物!";
 		next;
-		mes "[Cebalis]";
-		mes "And most importantly, look around before you use it. Otherwise you'll be in BIG trouble~ ";
+		mes "[西發利司]";
+		mes "而且最重要的是,要看清楚周圍再使用，不然你的麻煩大了 ";
 		close;
 	}
 	mes "[Cebalis]";
-	mes "Right?! ^EE0000Magnum Break^000000 is THE BEST!!! You know what you're talking about, eh? I don't know why this jerkface is being sooooo stubborn.";
+	mes "對吧?! ^EE0000怒爆^000000 是最棒的!!! 你比較有概念喔!";
+	mes "那白痴為什麼這麼倔強，我真不瞭解啊!";
 	close;
 }
 
 -	script	::Cebalis_izlude	-1,{
-	mes "[Red]";
-	mes "The only skill that's needed for a Swordman is ^FF2400Bash^000000! Bash, Bash and ONLY ^FF2400Bash^000000! No need to waste time and effort on smaller skills~~ Everything else is for cowards and wusses!";
+	mes "[瑞德]";
+	mes "劍士只需要一種技能，那就是 is ^FF2400狂擊^000000! 狂擊, 狂擊 以及 ^FF2400狂擊^000000! 沒有必要浪費時間為著弱小的技能而努力! 其餘的都是懦夫及膽小鬼才會使用!";
 	next;
-	mes "[Cebalis]";
-	mes "What are you talking about!? The ideal Swordman resolutely stands alone, surrounded by countless foes, smashing them all with one awesome attack...";
+	mes "[西發利斯]";
+	mes "你在說什麼啊!? 不管怎麼說劍士最大的希望是，獨自衝進戰場獨當一面的，這時候需要的是怒爆~!";
+	mes "除了主動攻擊我的傢伙之外，還有四周圍徘徊的傢伙，在我怒爆時讓他們得到傷害，本人雖然也會受到一點損失，身為劍士對小小的損失是可以承擔的!";
 	next;
-	mes "[Cebalis]";
-	mes "^EE0000MAGNUM BREAK!^000000";
-	mes "That's right, Magnum Break";
-	mes "is the perfect";
-	mes "Swordman skill.";
+	mes "[瑞德]";
+	mes "所以說你這傢伙是白癡呀!";
+	mes "什麼是男子漢的希望啊?";
+	mes "讓自己造成損失去冒這種風險真是白癡，";
+	mes "你已經變得很脆弱了，上次你用錯這技能，";
+	mes "無意間打到一群路過的波利，造成一群波利衝過來，嚇得逃跑，我還記得一清二楚啊!";
 	next;
-	mes "[Cebalis]";
-	mes "Well...";
-	mes "Sometimes the explosion accidentally hits some monsters that are just wandering around.";
+	mes "[西發利斯]";
+	mes "那、那種事...";
+	mes "就忘記吧，不管怎樣，是劍士的話，就善用怒爆吧!!!";
+	mes "狂擊，只是修練怒爆中間的過程而已";
 	next;
-	mes "[Cebalis]";
-	mes "Then they all end up coming after you, but that's a risk a true Swordman should be willing to take.";
+	mes "[瑞德]";
+	mes "喂...那邊在聽我講話的人... 對!";
+	mes "就是你，你認為怎麼樣啊?";
+	mes "狂擊和給予範圍攻擊傷害的怒爆!";
+	mes "哪一個比較優秀呢?";
 	next;
-	mes "[Red]";
-	mes "That's exactly why you're dumb, you idiot! And what was that about the 'ideal Swordman?' You remember the last time you used Magnum Break?!";
 	next;
-	mes "[Red]";
-	mes "You had to run away from all those Porings hit by that stupid skill! You weakling! All those Porings that you hit tried to kill you! ";
-	next;
-	mes "[Cebalis]";
-	mes "Oh shut up. And those were Poporings. As I recall, you were running away too, apparently too busy to use your precious Bash.";
-	next;
-	mes "[Cebalis]";
-	mes "In any case, Magnum Break is THE skill for a Swordman~!! Something simplistic like Bash is just one of those little steps towards Magnum Break.";
-	next;
-	mes "[Red]";
-	mes "Oh man~";
-	mes "Hey, I know you";
-	mes "heard everything.";
-	mes "So what do you think?";
-	next;
-	mes "[Red]";
-	mes "Which one do you think is better? The critical damage skill, ^FF2400Bash^000000, or the Splash damage skill, ^EE0000Magnum Break^000000?";
-	next;
-	if (select("Bash:Magnum Break") == 1) {
+	if (select("狂擊:怒爆") == 1)  {
 		if (BaseClass == Job_Swordman) {
-			mes "[Red]";
-			mes "Hahahaha!!! I knew you'd see things my way!! You ARE a great guy!! Without a doubt, only ^FF2400Bash^000000 suits a Swordman. Please tell that to FUNBOY over here!! Hahaha.";
+			mes "[瑞德]";
+			mes "哈哈哈哈!!!我就知道你的眼光跟我一樣!! 你是一個傑出的傢伙!!無庸置疑, 只有 ^FF2400狂擊^000000 適合劍士. 請告訴這位石頭腦袋吧 哈哈哈!";
 			next;
-			mes "[Red]";
-			mes "Hmm, let me give you a bit of advice. After you achieve level 5 Bash, the amount of SP consumed by the skill increases greatly, so watch out for your SP.";
+			mes "[瑞德]";
+			mes "嗯, 我來給你點小建議吧. 當你 '狂擊' 點到5之後, SP點數的消耗，將會隨著技能等級的提升而提高, 所以記得注意一下你的SP.";
 			close;
 		}
-		mes "[Red]";
-		mes "Hahahaha!!";
-		mes "See!? Someone who pursues a different job agrees with me~! You really are a great guy! Hahaha!!";
-		next;
-		mes "[Red]";
-		mes "Without a doubt, only ^FF2400Bash^000000 suits a Swordman. Please tell that to this MORON over here!! Hahaha~";
+		mes "[瑞德]";
+		mes "哈哈哈哈!! 你看看連別職業的人都這樣說啊，哈哈!你真是一位很棒的人，";
+		mes "就是說嘛，劍士還是用狂擊比較好，麻煩你教一下那位石頭腦袋好嗎?";
 		close;
 	}
 	if (BaseClass == Job_Swordman) {
-		mes "[Cebalis]";
-		mes " Alright!! ^EE0000Magnum Break^000000 is the BEST!! Now you're talking~!! You know your stuff, kid. HaHaHa~!";
+		mes "[西發利司]";
+		mes "沒錯!! ^EE0000怒爆^000000 是最棒的!! Now you're talking~!! You know the stuff~ HaHaHa!";
 		next;
-		mes "[Cebalis]";
-		mes "You wanna know some useful information? Okay, okay lemme tell ya! The explosion from 'Magnum Break' has the Fire Property.";
+		mes "[西發利司]";
+		mes "你想知道一些更有用的情報? 好吧, 好吧 讓我來告訴你吧! 怒爆是火屬性的技能.";
 		next;
-		mes "[Cebalis]";
-		mes "So it won't be very effective against Water property monsters, but this is THE skill to use against Undead and Earth property monsters.!";
+		mes "[西發利司]";
+		mes "所以它對於水屬性的魔物作用不大, 但可以對付不死屬性與地屬性的魔物!";
 		next;
-		mes "[Cebalis]";
-		mes "And most importantly, look around before you use it. Otherwise you'll be in BIG trouble~ ";
+		mes "[西發利司]";
+		mes "而且最重要的是,要看清楚周圍再使用，不然你的麻煩大了 ";
 		close;
 	}
 	mes "[Cebalis]";
-	mes "I'm right, aren't I?! ^EE0000Magnum Break^000000 is THE BEST!!! You know what you're talking about, eh? I don't know why this LARDFACE is sooooo stubborn.";
+	mes "對吧?! ^EE0000怒爆^000000 是最棒的!!! 你比較有概念喔!";
+	mes "那白痴為什麼這麼倔強，我真不瞭解啊!";
 	close;
 }
 
@@ -468,16 +445,17 @@ izlude_in,125,164,2	script	Aaron#izlude	65,{
 	next;
 	if (select("告訴我更多.:結束對話.") == 1) {
 		mes "[Aaron]";
-		mes "Hmm...";
-		mes "In that case, I'll explain about the other attributes to you briefly. In order to attack and evade quickly, you've gotta pay attention to AGI. ";
+		mes "這樣的話，對別的能力值也簡單的說明好了，";
+		mes "想快速的移動、快速的攻擊敵人或輕易的閃避敵人的攻擊，只要投資AGI能力即可";
 		next;
 		mes "[Aaron]";
-		mes "In case you want to make more critical hits, it's a good idea to invest in LUK. INT also increases Max SP, which is needed to use various skills... But it's really up to you.";
+		mes "你想要達到必殺攻擊效果的話，在LUK上投資一些吧，投資INT可以增加SP來可以使用更多技能、並且增加魔法傷害";
+		mes "嗯...請你好好的調整吧";
 		close;
 	}
 	mes "[Aaron]";
-	mes "Okay then,";
-	mes "train hard~~";
+	mes "好吧，那麼,";
+	mes "努力訓練吧~~";
 	close;
 }
 
