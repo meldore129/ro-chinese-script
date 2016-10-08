@@ -71,54 +71,48 @@
 -	script	::Bonne_izlude	-1,{
 	mes "[Bonne]";
 	mes "(向你打了招呼)!";
-	mes "依斯魯德歡迎你.";
+	mes "伊斯魯德歡迎你.";
 	next;
 	mes "[Bonne]";
-	mes "Izlude is the satellite city of Prontera, capital of the Rune-Midgarts kingdom.";
+	mes "伊斯魯德是普隆德拉的衛星城市, 隸屬於盧恩德加茲王國";
 	next;
 	mes "[Bonne]";
-	mes "Izlude is key to our kingdom because of the Swordsman Association located here, as well as the fact that Izlude is in charge of protecting the Rune-Midgard coastline.";
+	mes "伊斯魯德是我們王國的重要地點，因為劍士公會位於此地,而且事實上，伊斯魯德島也負責保護盧恩德加茲王國的海岸線.";
 	next;
 	mes "[Bonne]";
-	mes "I know, this bridge might look weak and fragile, but it is actually state of the art, built with the most sophisticated technology.";
+	mes "我知道, 這座橋或許看起來不穩固且搖搖欲墜, 但事實上它採用了最先進的技術.";
 	next;
 	mes "[Bonne]";
-	mes "No matter how strong storms may be, or how many people may stand on it, this bridge will NEEEEVER collapse.";
+	mes "不論多強的風暴來襲, 或者多少人站在上面, 這座橋都不、可、能會崩毀！";
 	next;
 	mes "[Bonne]";
-	mes "Please enjoy";
-	mes "your visit";
-	mes "here in Izlude.";
+	mes "請好好參觀伊斯魯德吧，祝福你!";
 	close;
 }
 
 -	script	::Charfri_izlude	-1,{
-	mes "[Charfri]";
+	mes "[夏普立]";
 	switch(rand(2)) {
 	case 1:
-		mes "Some people may think Izlude is just a satellite city of Prontera, and not really that important...";
+		mes "有人看不起我們是普隆德拉的衛星都市，";
+		mes "不過伊斯魯德島靠近海洋，擁有一座美麗";
+		mes "的柏伊亞嵐島，是一個偉大的城市";
 		next;
-		mes "[Charfri]";
-		mes "But Izlude is a beautiful town right next to the ocean, as well as beautiful Bylan Island.";
-		next;
-		mes "[Charfri]";
-		mes "You'll have to board on a ship at the port to get to Byalan Island. There are dangerous dungeons on that island, so don't go snooping around just anywhere.";
+		mes "[夏普立]";
+		mes "想去柏伊亞嵐島的話，在港口搭船即可，";
+		mes "島上有很多危險的洞穴，請不要隨便的進出";
 		close;
 	default:
-		mes "Though it is very beautiful, Byalan Island has a mysterious dungeon that extends deep under the sea.";
+		mes "雖然說柏伊亞嵐島是非常漂亮的地方，不過也是連接到深海深處洞穴入口的地方.";
 		next;
-		mes "[Charfri]";
-		mes "People who've actually been there have said that if you go deep enough, the dungeon actually descends underwater.";
+		mes "[夏普立]";
+		mes "根據去過那洞穴的人來說，越往深處下去的話，那洞穴就全部淹在水底下呢，";
+		mes "可能是有神秘的力量在作用吧，在那裡人也可以像魚一樣能夠呼吸";
 		next;
-		mes "[Charfri]";
-		mes "Surprisingly, once you're underwater, you can breathe just like a fish. Maybe some kind of supernatural force is in effect.";
-		next;
-		mes "[Charfri]";
-		mes "Ah...";
-		mes "The people who've seen the underwater view say it is so fantastic that they've kept dreaming of it ever since.";
-		next;
-		mes "[Charfri]";
-		mes "But unfortunately, the monsters are too strong for ordinary people to merely go sight seeing there. Still, just once, I'd like to go down there...";
+		mes "[夏普立]";
+		mes "水裡的風景非常夢幻，真的讓人難以忘懷啊，";
+		mes "可是隨時會有邪物的魔物出沒，不是每個人都能隨便進出";
+		mes "我也很想去，但是太危險，所以只能用想像的";
 		close;
 	}
 }
@@ -287,7 +281,7 @@
 			mes "哈哈哈哈!!!我就知道你的眼光跟我一樣!! 你是一個傑出的傢伙!!無庸置疑, 只有 ^FF2400狂擊^000000 適合劍士. 請告訴這位石頭腦袋吧 哈哈哈!";
 			next;
 			mes "[Red]";
-			mes "嗯, 我來給你點小建議吧. 當你 '狂擊' 點到5之後, SP點數的消耗將會提高, 所以記得注意一下你的SP.";
+			mes "嗯, 我來給你點小建議吧. 當你 '狂擊' 點到5之後, SP點數的消耗，將會隨著技能等級的提升而提高, 所以記得注意一下你的SP.";
 			close;
 		}
 		mes "[Red]";
@@ -392,58 +386,60 @@
 
 -	script	::Soldier_izlude	-1,{
 	mes "[Soldier]";
-	mes "HeHeHeHe..HaHaHaHa ";
-	mes "Huh? Why am I so happy?";
-	mes "You wanna know?";
+	mes "嘿嘿嘿，哈哈哈哈...";
+	mes "嗯? 什麼事讓我這麼高興?";
+	mes "你想知道嗎?";
 	next;
-	if (select("Sure, why?:Not really, I don't care.") == 1) {
+	if (select("當然, 為什麼呢?:不用了, 我不在意.") == 1) {
 		mes "[Soldier]";
-		mes "Ah~~ There's not much for us to do these days. You see, Merchants buy items dropped by monsters. But you knew that, right? ";
+		mes "啊~~ 我想你也知道吧?";
+		mes "抓到魔物從他們身上取得戰利品後，部分商人們用錢來買回去的事實";
 		next;
-		if (select("Of course:Eh? Really?") == 1) {
+		if (select("當然:噢? 真的嗎?") == 1) {
 			mes "[Soldier]";
-			mes "HaHa~ In fact, that was actually part of our job. But there were more and more hunters who came to us in order to get paid and it became too much to handle.";
+			mes "老實說那是我們的工作耶，";
+			mes "不過最近狩獵的人好像變多了，所以只有我們倆人來處理這些工作是有點負荷不了的";
 			next;
 			mes "[Soldier]";
-			mes "We had to work overtime every day. Ah, it was a nightmare...! Anyway, the government eventually made a wise decision in creating the Registration System.";
+			mes "說真的每天都是連續加班，只要回想到那個時候...嗚嗚嗚~~~";
+			mes "所以說政府用了卑鄙的手法，要有販賣證才能到賞金兌換所換取現金";
 			next;
 			mes "[Soldier]";
-			mes "The Office of Prize Compensation only pays those who have the Registration. Of course, you'd have to be a merchant and stay in the same place all day long.";
+			mes "販賣證對許多人來說可以買進許多戰利品的基本資金，對在一定的場所做買賣的商人們會發給他們的";
 			next;
 			mes "[Soldier]";
-			mes "The Office gives away the registration to any merchant who fulfills those requirements. So nowadays, the hunters sell their goods to the registered merchants.";
-			next;
-			mes "[Soldier]";
-			mes "So nowadays, the hunters sell their goods to the registered merchants.  Not too many people come to us for that anymore.";
-			next;
-			mes "[Soldier]";
-			mes "I mean we are still busy, but that's nothing compared to how it was before. People who have felt suffering know how to appreciate even the slightest comfort.";
+			mes "所以說現在找我們的人變得很少了!";
+			mes "其實我們的經濟情況也不是很好，不過卻讓我們變得輕鬆啊~";
+			mes "所以說當人們碰到艱苦的環境之後，才知道什麼叫做輕鬆啊，";
+			mes "哈哈哈!";
 			close;
 		}
 		mes "[Soldier]";
-		mes "What?! What do you mean you didn't know?! Well, you know you can get items by killing monsters. If you bring and sell those to a merchant, you can make some money. ";
+		mes "你難道不知道嗎?!";
+		mes "嗯...這...";
+		mes "這...抓到魔物從他們身上取得戰利品後，把這東西賣給商人的話，是個可觀的收入啊，";
+		mes "反正!";
 		next;
 		mes "[Soldier]";
-		mes "HaHa, in fact, that used to be part of our job. But there were more and more hunters who come in order to get paid, so it became too much to handle.";
+		mes "老實說那是我們的工作耶，";
+		mes "不過最近狩獵的人好像變多了，所以只有我們倆人來處理這些工作是有點負荷不了的";
 		next;
 		mes "[Soldier]";
-		mes "We had to work overtime every day. Ah, it was a nightmare...! Anyway, the government eventually made a wise decision in creating the Registration System.";
+		mes "說真的每天都是連續加班，只要回想到那個時候...嗚嗚嗚~~~";
+		mes "所以說政府用了卑鄙的手法，要有販賣證才能到賞金兌換所換取現金";
 		next;
 		mes "[Soldier]";
-		mes "The Office of Prize Compensation only pays those who have the Registration. Of course, you'd have to be a merchant and stay in the same place all day long.";
+		mes "販賣證對許多人來說可以買進許多戰利品的基本資金，對在一定的場所做買賣的商人們會發給他們的";
 		next;
 		mes "[Soldier]";
-		mes "The Office gives away the registration to any merchant who fulfills those requirements. So nowadays, the hunters sell their goods to the registered merchants.";
-		next;
-		mes "[Soldier]";
-		mes "So nowadays, the hunters sell their goods to the registered merchants.  Not too many people come to us for that anymore.";
-		next;
-		mes "[Soldier]";
-		mes "I mean we are still busy, but that's nothing compared to how it was before. People who have felt suffering know how to appreciate even the slightest comfort.";
+		mes "所以說現在找我們的人變得很少了!";
+		mes "其實我們的經濟情況也不是很好，不過卻讓我們變得輕鬆啊~";
+		mes "所以說當人們碰到艱苦的環境之後，才知道什麼叫做輕鬆啊，";
+		mes "哈哈哈!";
 		close;
 	}
 	mes "[Soldier]";
-	mes "Okay Good Bye~~";
+	mes "好吧 再見囉~";
 	close;
 }
 
@@ -451,30 +447,26 @@
 //============================================================
 izlude_in,125,164,2	script	Aaron#izlude	65,{
 	mes "[Aaron]";
-	mes "Don't you think Strong VIT and training in a unique breathing method which enables quick HP recovery are the greatest advantages for a Swordman?";
+	mes "嗯? 劍士?";
+	mes "不管怎麼說，做為劍士要有強韌的體力，";
+	mes "還有特別訓練的呼吸法，讓他比其他人更快恢復HP，是他的優點吧?";
 	next;
 	mes "[Aaron]";
-	mes "If you train your skills very hard, you can even see your HP recovering. The amount";
-	mes "recovered depends";
-	mes "vitality, or VIT.";
+	mes "努力的修練技能的話，自己也可以感覺到體力在恢復呢，還有HP恢復能力受到VIT影響，所以對VIT大力投資，相對的恢復體力也快";
 	next;
 	mes "[Aaron]";
-	mes "So if you invest more of your stats in VIT, you'll recover more HP overall when resting.";
+	mes "攻擊力變強也不錯吧?";
+	mes "要給對方造成重度傷害的話武器也要好，";
+	mes "可以提升STR做為輔助，不然武器再怎麼好沒力量揮舞的話是沒用的";
 	next;
 	mes "[Aaron]";
-	mes "But of course, it'd be good to have high Attack, wouldn't it? You can either acquire a good weapon or bring up your STR to support you Attack.";
-	next;
+	mes "還有正確的揮舞劍法技能是很重要的，這可以透過DEX來訓練的，若能正確的揮舞刀的話，最少傷害力和最大傷害力的差異，不會相差很大的";
+	next;	
 	mes "[Aaron]";
-	mes "You know you'll need some strength anyway to swing good weapons easily, anyway.";
+	mes "嗯...";
+	mes "有...有點無聊嗎? 還要繼續聽嗎?";
 	next;
-	mes "[Aaron]";
-	mes "Another important thing is how accurate you can hit your opponents. DEX is the key here. If you train DEX, then the gap between the MIN and MAX damage will also decrease.";
-	next;
-	mes "[Aaron]";
-	mes "Hm...";
-	mes "Are you bored by all this talk? Or do you want me to go on?";
-	next;
-	if (select("Tell me more please.:End conversation.") == 1) {
+	if (select("告訴我更多.:結束對話.") == 1) {
 		mes "[Aaron]";
 		mes "Hmm...";
 		mes "In that case, I'll explain about the other attributes to you briefly. In order to attack and evade quickly, you've gotta pay attention to AGI. ";
@@ -493,10 +485,9 @@ izlude_in,125,164,2	script	Aaron#izlude	65,{
 //============================================================
 izlu2dun,108,27,0	script	Sailor#2izlude	100,{
 	mes "[Sailor]";
-	mes "Wanna";
-	mes "head back?";
+	mes "想要調頭回去了嗎?";
 	next;
-	if (select("Yeah, I'm tired to death.:Nope, I love this place!") == 1) {
+	if (select("是, 我厭倦了死亡...:不, 我愛這個地方!") == 1) {
 		if(checkre(0))
 			warp "izlude",197,210;
 		else
