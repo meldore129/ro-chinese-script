@@ -75,15 +75,15 @@ yuno,337,227,4	script	Juno Granny#juno	103,{
 			mes "Here's ^3355FF1,000 zeny^000000.";
 			mes "Do you accept this?";
 			next;
-			if (select("Accept:Do not accept") == 1) {
+			if (select("同意:不同意") == 1) {
 				mes "[Granny]";
-				mes "*Giggle*";
+				mes "*傻笑*";
 				mes "There you go~";
 				set Zeny, Zeny-1000;
 				getitem 529,1; //Candy
 				next;
 				mes "[Granny]";
-				mes "*Giggle*";
+				mes "*傻笑*";
 				mes "Well then...";
 				mes "See you ~";
 				close;
@@ -152,7 +152,7 @@ yuno,343,68,4	script	Juno Despot#juno	730,{
 	close;
 }
 
-yuno,165,111,4	script	Juno Sage#juno	123,,{
+yuno,165,111,4	script	朱諾 賢者#juno	123,,{
 	mes "[Le Morpheus]";
 	if (rand(1,50) == 25) {
 		if (Zeny > 4999) {
@@ -199,7 +199,7 @@ yuno,165,111,4	script	Juno Sage#juno	123,,{
 	}
 }
 
-yuno,157,205,4	script	Juno Artisan#juno	54,{
+yuno,157,205,4	script	朱諾 工匠#juno	54,{
 	mes "[Artisan]";
 	mes "*Mumble mumble...*";
 	next;
