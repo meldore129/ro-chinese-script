@@ -20,75 +20,73 @@
 //= 1.7 Bug fixes and syntax. [Capuche]
 //============================================================
 
-alberta,97,51,0	script	Fabian	84,{
-	mes "[Fabian]";
+alberta,97,51,0	script	法比安	84,{
+	mes "[法比安]";
 	mes "先生... 當你走遍整個世界，你會聽到一些很瘋狂的事情.";
 	next;
-	mes "[Fabian]";
+	mes "[法比安]";
 	mes "曾經, 我聽說過含有魔物力量的卡片. 如果有人剛好得到卡片, 那麼他將可以使用魔物的力量.";
 	next;
-	mes "[Fabian]";
+	mes "[法比安]";
 	mes "我猜，這是最近流行的傳言，或者騙局, 好讓你去蒐集所有的卡片. 我是指,一張卡片真的能擁有魔物的力量?!";
 	next;
-	mes "[Fabian]";
+	mes "[法比安]";
 	mes "認真點...";
 	close;
 }
 
-alberta,53,39,0	script	Steiner	100,{
-	mes "[Steiner]";
+alberta,53,39,0	script	斯坦納	100,{
+	mes "[斯坦納]";
 	mes "噢...!";
-	mes "歡迎來到Alberta,";
+	mes "歡迎來到艾爾貝塔,";
 	mes "年輕的冒險者!";
 	next;
-	mes "[Steiner]";
+	mes "[斯坦納]";
 	mes "如果我分心的話，請原諒我. 我轉來轉去, 嘗試去擬定一個計畫. 你瞧, 我聽說在Geffen的商店出售的裝甲擁有魔法的抗性.";
 	next;
-	mes "[Steiner]";
+	mes "[斯坦納]";
 	mes "如果我大量去購買它們, 然後再這裡以更高的價轉賣...";
 	close;
 }
 
-alberta_in,20,183,0	script	Chad	1_M_03,{
-	mes "[Chad]";
-	mes "人們說，傳說中的武器Gungnir從來不會錯過它的鎖定目標. 我想這是否為真...";
+alberta_in,20,183,0	script	查德	1_M_03,{
+	mes "[查德]";
+	mes "根據流傳，傳說中的武器－永恆之槍從來不會錯過它的鎖定目標. 不知道是不是真的...";
 	next;
-	mes "[Chad]";
-	mes "人們也說過 that babies are assembled by the storks before delivery, girls dig guys who act like jerks, and that Santa Claus exists! But only in Lutie.";
+	mes "[查德]";
+	mes "人們也說過小嬰兒是由送子鳥所製作再出貨的, 女孩挖苦人都像混球一樣, 甚至是聖誕老人存在! 但只有在聖誕村.";
 	next;
-	mes "[Chad]";
-	mes "I wonder...";
-	mes "If any of that";
-	mes "is possibly";
-	mes "true...";
+	mes "[查德]";
+	mes "我想...";
+	mes "如果這其中任何一個有可能是真的，那...";
 	close;
 }
 
-alberta,131,139,2	script	Drunken Old Man	1_M_JOBGUIDER,{
-	mes "[Deagle]";
-	mes "^666666*Hiccup*^000000";
-	mes "Wh-what are you";
-	mes "staring at? Get lost!!";
+alberta,131,139,2	script	喝醉的老男人	1_M_JOBGUIDER,{
+	mes "[迪格爾]";
+	mes "^666666*打嗝*^000000";
+	mes "你-你是做什麼的";
+	mes "看什麼看? 給我滾蛋!!";
 	next;
-	switch(select("Say nothing.","Leave him alone.")) {
+	switch(select("什麼都不說.","離他遠一點.")) {
 	case 1:
-		mes "[Deagle]";
-		mes "Hahahaha ^666666*hiccup*^000000... You've got some nerve. I may look worthless now, but I used to be a sailor on the 'Going Mary.'";
+		mes "[迪格爾]";
+		mes "哈哈哈哈 ^666666*打嗝*^000000... 你還真的有點勇氣. 我現在可能看起來沒啥用, 但我以前可是 'Going Mary.'上的水手!";
 		next;
-		switch(select("Never heard of it.","Really? No kidding!")) {
+		switch(select("從沒聽過它.","真的嗎? 不要開玩笑!")) {
 		case 1:
 			mes "[Deagle]";
-			mes "Never heard of it?! Everybody knows th'notorious pirate ship 'Going Mary!' ^666666*Hiccup~*^000000";
+			mes "從沒聽過它?! 所有人都知道臭名昭彰的海盜船 'Going Mary!' ^666666*打嗝~*^000000";
 			next;
 			mes "[Deagle]";
-			mes "Ah~ The ol'days. If only... If only we hadn't run into that STORM...^666666*hiccup*^000000";
+			mes "啊~ 那遙遠的過去. 如果...沒有碰上那場暴風雨就好了 ^666666*打嗝*^000000";
 			next;
 			mes "[Deagle]";
-			mes "AH~ Captain. I miss our cap'n more than anything... No foe survived before cap'n's sword.";
+			mes "啊~ 船長. 我想念我們的船長，勝過任何事... 從來沒有敵人可以活在船長的劍下.";
 			close;
 		case 2:
 			mes "[Deagle]";
-			mes "That's right! NOBODY meshes with the crew of the 'Going Mary!' And nobody can beat out cap'n in a sword fight!";
+			mes "這就對了! 沒有人可以困住 'Going Mary!'的全體船員 也沒有人能用劍贏過船長!";
 			next;
 			mes "[Deagle]";
 			mes "CAPTAIN~!!! ^666666*HICCUP~*^000000 He would swing his sword like this, then... THEN!!";
