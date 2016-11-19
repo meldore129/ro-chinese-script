@@ -28,7 +28,7 @@ alberta,97,51,0	script	法比安	84,{
 	mes "曾經, 我聽說過含有魔物力量的卡片. 如果有人剛好得到卡片, 那麼他將可以使用魔物的力量.";
 	next;
 	mes "[法比安]";
-	mes "我猜，這是最近流行的傳言，或者騙局, 好讓你去蒐集所有的卡片. 我是指,一張卡片真的能擁有魔物的力量?!";
+	mes "我想這是最近流行的傳言，或者騙局, 好讓你去蒐集所有的卡片. 我是指,一張卡片真的能擁有魔物的力量?!";
 	next;
 	mes "[法比安]";
 	mes "認真點...";
@@ -75,63 +75,61 @@ alberta,131,139,2	script	喝醉的老男人	1_M_JOBGUIDER,{
 		next;
 		switch(select("從沒聽過它.","真的嗎? 不要開玩笑!")) {
 		case 1:
-			mes "[Deagle]";
+			mes "[迪格爾]";
 			mes "從沒聽過它?! 所有人都知道臭名昭彰的海盜船 'Going Mary!' ^666666*打嗝~*^000000";
 			next;
-			mes "[Deagle]";
+			mes "[迪格爾]";
 			mes "啊~ 那遙遠的過去. 如果...沒有碰上那場暴風雨就好了 ^666666*打嗝*^000000";
 			next;
-			mes "[Deagle]";
+			mes "[迪格爾]";
 			mes "啊~ 船長. 我想念我們的船長，勝過任何事... 從來沒有敵人可以活在船長的劍下.";
 			close;
 		case 2:
-			mes "[Deagle]";
-			mes "這就對了! 沒有人可以困住 'Going Mary!'的全體船員 也沒有人能用劍贏過船長!";
+			mes "[迪格爾]";
+			mes "這就對了! 從來沒有人可以捉住 'Going Mary!'的全體船員 也沒有人能用劍贏過船長!";
 			next;
-			mes "[Deagle]";
-			mes "CAPTAIN~!!! ^666666*HICCUP~*^000000 He would swing his sword like this, then... THEN!!";
+			mes "[迪格爾]";
+			mes "船長~!!! ^666666*打嗝~*^000000 他會像這樣揮舞他的劍, 這樣... 甚至這樣!!";
 			next;
-			mes "[Deagle]";
-			mes "The bastard the captain was fighting, and anyone of his friends near him, were surrounded in flame!";
+			mes "[迪格爾]";
+			mes "和船長戰鬥的混蛋, 和任何在他身旁的朋友, 全都被火焰包圍著!";
 			next;
-			mes "[Deagle]";
-			mes "Man, that sword must have had some sort of mysterious power, or the captain was just that good...!";
+			mes "[迪格爾]";
+			mes "老兄, 那把劍一定鑲嵌了某些神秘的力量, 或者只是船長本身就很猛...!";
 			next;
-			mes "[Deagle]";
-			mes "Phew~~ ^666666*Sob* *Sob...*^000000 God, I miss everyone! Now I'm depressed! Please, go away now.";
+			mes "[迪格爾]";
+			mes "呸~~ ^666666*啜泣* *啜泣...*^000000 天啊, 我好想念你們! 現在我很鬱卒～請你離開吧.";
 			close;
 		}
 	case 2:
-		mes "[Deagle]";
-		mes "That's right!";
-		mes "Go AWAY~";
+		mes "[迪格爾]";
+		mes "這就對了!";
+		mes "你走吧~";
 		close;
 	}
 }
 
-alberta,58,80,2	script	Shakir	99,{
-	mes "[Shakir]";
+alberta,58,80,2	script	沙基爾	99,{
+	mes "[沙基爾]";
 	if (rand(2)) {
-		mes "We Merchants have our own negotiating skill when we sell goods. This skill can get us more money than when other people sell goods.";
+		mes "我們商人在出售商品時，擁有自己的一套談判技巧. 這個技巧可以讓我們賣商品時獲得更多的錢.";
 		next;
-		mes "[Shakir]";
-		mes "It's more than just yelling 'You'll have to give more money please!' You need to have charisma, and master rhetoric!";
+		mes "[沙基爾]";
+		mes "它不僅僅是叫喊“你必須給更多的錢！ 你需要有魅力，要懂得修飾措辭！";
 		next;
-		mes "[Shakir]";
-		mes "We can get up to 24 % more zeny with this incredible skill. But remember to train hard to acquire it!!";
+		mes "[沙基爾]";
+		mes "我們可以藉著這難以置信的技能多獲得24%的戒尼(Zeny). 但記住，要勤加練習才能獲得它!!";
 	} else {
-		mes "We Merchants can";
-		mes "open roadside stands";
-		mes "to do business.";
+		mes "我們商人可以在路邊開設攤位來做生意";
 		next;
-		mes "[Shakir]";
-		mes "With the Discount skill, we can buy goods really cheap from the stores in towns and load them into the cart we rent.";
+		mes "[沙基爾]";
+		mes "有了折扣季能, 我們可以在商店中買到真正便宜的商品，並且放在我們租用的手推車中";
 		next;
-		mes "[Shakir]";
-		mes "Then afterwards, we can travel anywhere, and sells our goods to make a profit!";
+		mes "[沙基爾]";
+		mes "然後，我們可以在任何地方旅行，出售我們的貨物賺取利潤";
 		next;
-		mes "[Shakir]";
-		mes "This way, business is more convenient and safe. Don't fall asleep, although it's too easy to do that.";
+		mes "[沙基爾]";
+		mes "這樣一來, 貿易更加方便、安全. 記住別睡著， 雖然不太可能做到就是了.";
 	}
 	close;
 }
