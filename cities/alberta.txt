@@ -62,7 +62,7 @@ alberta_in,20,183,0	script	查德	1_M_03,{
 	close;
 }
 
-alberta,131,139,2	script	喝醉的老男人	1_M_JOBGUIDER,{
+alberta,131,139,2	script	喝醉的老頭	1_M_JOBGUIDER,{
 	mes "[迪格爾]";
 	mes "^666666*打嗝*^000000";
 	mes "你-你是做什麼的";
@@ -98,7 +98,7 @@ alberta,131,139,2	script	喝醉的老男人	1_M_JOBGUIDER,{
 			mes "老兄, 那把劍一定鑲嵌了某些神秘的力量, 或者只是船長本身就很猛...!";
 			next;
 			mes "[迪格爾]";
-			mes "呸~~ ^666666*啜泣* *啜泣...*^000000 天啊, 我好想念你們! 現在我很鬱卒～請你離開吧.";
+			mes "呸~~ ^666666*抽泣* *抽泣...*^000000 天啊, 我好想念你們! 現在我很鬱卒～請你離開吧.";
 			close;
 		}
 	case 2:
@@ -123,49 +123,49 @@ alberta,58,80,2	script	沙基爾	99,{
 		mes "我們商人可以在路邊開設攤位來做生意";
 		next;
 		mes "[沙基爾]";
-		mes "有了折扣季能, 我們可以在商店中買到真正便宜的商品，並且放在我們租用的手推車中";
+		mes "有了折扣技能, 我們可以在商店中買到真正便宜的商品，並且放在我們租用的手推車中";
 		next;
 		mes "[沙基爾]";
 		mes "然後，我們可以在任何地方旅行，出售我們的貨物賺取利潤";
 		next;
 		mes "[沙基爾]";
-		mes "這樣一來, 貿易更加方便、安全. 記住別睡著， 雖然不太可能做到就是了.";
+		mes "這樣一來, 貿易更加方便、安全. 記住別睡著， 雖然不太可能就是了.";
 	}
 	close;
 }
 
-alberta,62,156,2	script	Sonya	102,{
-	mes "[Sonya]";
+alberta,62,156,2	script	索尼亞	102,{
+	mes "[索尼亞]";
 	switch(rand(3)){
 	case 0:
-		mes "Hey, you know, this one time I was walking through the forest and I saw this little green stem moving around.";
+		mes "嘿, 你知道嗎,有一次我在森林閒逛時，我瞧見一個綠色的莖正在移動.";
 		next;
-		mes "[Sonya]";
-		mes "I went to see what it was and when I went to touch it. The stem actually slapped my hand!";
+		mes "[索尼亞]";
+		mes "我想去瞧看看怎麼回事，並且觸碰了它. 這莖確實地拍開了我的手!";
 		next;
-		mes "[Sonya]";
-		mes "It startled me, so I jumped back a bit and then I realized it wasn't a stem, but a very small animal.";
+		mes "[索尼亞]";
+		mes "嚇死我了, 所以我趕緊往後一跳，我猜那不是植物的莖，而是某種小型魔物.";
 		next;
-		mes "[Sonya]";
-		mes "I was lucky I didn't upset it. Even the smallest animal can be dangerous if angered.";
+		mes "[索尼亞]";
+		mes "我很慶幸我沒有惹惱他. 甚至是最小的魔物也非常危險，如果它生氣的話.";
 		close;
 	case 1:
-		mes "You know those lazy looking bears that live in the forest on the way to Payon?";
+		mes "你知道那群住前往翡楊路上的森林，看起來很懶惰的熊嗎?";
 		next;
-		mes "[Sonya]";
-		mes "Just for fun, I threw a rock at it and all of sudden it rushed at me! I was sooooo scared, I started to run away, then BAM!!!";
+		mes "[索尼亞]";
+		mes "只是好玩,我朝其中一隻丟了塊石頭，而牠竟朝我衝了過來! 我當時嚇～～～得要死，趕緊逃跑，然後磅－！";
 		next;
-		mes "[Sonya]";
-		mes "It ran into a low tree branch and knocked itself out! I swear, I'll never provoke an animal for fun again!";
+		mes "[索尼亞]";
+		mes "牠撞上了一個低樹干後暈倒了! 我發誓, 我再也不會因為好玩而去挑釁魔物了!";
 		close;
 	case 2:
-		mes "I once saw a pack of wolves take on one of those huge, lazy bears!";
+		mes "我曾經看過一群狼吞下那些巨大的懶熊";
 		next;
 		mes "[Sonya]";
-		mes "Wolves are much more cooperative than they may seem. If one of them is attacked, then any nearby wolves will run to help.";
+		mes "狼群比牠們看起來還要團結. 如果牠們其中一隻被攻擊，周圍附近的狼將會跑來幫助牠.";
 		next;
 		mes "[Sonya]";
-		mes "I'd think twice if you ever want to fight one when others of its kind are around. Be careful: don't get ganged up on!";
+		mes "我想了一下，如果你真的想與牠們戰鬥的話. 請小心: 不要讓自己被圍住!";
 		close;
 	}
 }
