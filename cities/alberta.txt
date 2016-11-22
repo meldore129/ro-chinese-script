@@ -31,7 +31,7 @@ alberta,97,51,0	script	法比安	84,{
 	mes "我想這是最近流行的傳言，或者騙局, 好讓你去蒐集所有的卡片. 我是指,一張卡片真的能擁有魔物的力量?!";
 	next;
 	mes "[法比安]";
-	mes "認真點...";
+	mes "我是說真的...";
 	close;
 }
 
@@ -42,7 +42,7 @@ alberta,53,39,0	script	斯坦納	100,{
 	mes "年輕的冒險者!";
 	next;
 	mes "[斯坦納]";
-	mes "如果我分心的話，請原諒我. 我轉來轉去, 嘗試去擬定一個計畫. 你瞧, 我聽說在Geffen的商店出售的裝甲擁有魔法的抗性.";
+	mes "如果我分心的話，請原諒我. 我轉來轉去, 嘗試去擬定一個計畫. 你瞧, 我聽說在吉芬的商店出售擁有魔法抗性的鎧甲.";
 	next;
 	mes "[斯坦納]";
 	mes "如果我大量去購買它們, 然後再這裡以更高的價轉賣...";
@@ -54,7 +54,7 @@ alberta_in,20,183,0	script	查德	1_M_03,{
 	mes "根據流傳，傳說中的武器－永恆之槍從來不會錯過它的鎖定目標. 不知道是不是真的...";
 	next;
 	mes "[查德]";
-	mes "人們也說過小嬰兒是由送子鳥所製作再出貨的, 女孩挖苦人都像混球一樣, 甚至是聖誕老人存在! 但只有在聖誕村.";
+	mes "人們也說過小嬰兒是由送子鳥所製作再出貨的, 女孩挖苦人都像混球一樣, 甚至是聖誕老人存在! 但只有在聖誕村.";//???
 	next;
 	mes "[查德]";
 	mes "我想...";
@@ -98,7 +98,7 @@ alberta,131,139,2	script	喝醉的老頭	1_M_JOBGUIDER,{
 			mes "老兄, 那把劍一定鑲嵌了某些神秘的力量, 或者只是船長本身就很猛...!";
 			next;
 			mes "[迪格爾]";
-			mes "呸~~ ^666666*抽泣* *抽泣...*^000000 天啊, 我好想念你們! 現在我很鬱卒～請你離開吧.";
+			mes "呸~~ ^666666*抽泣* *抽泣...*^000000 天啊, 我好想念你們! 現在我很難過～請你離開吧.";
 			close;
 		}
 	case 2:
@@ -161,47 +161,45 @@ alberta,62,156,2	script	索尼亞	102,{
 	case 2:
 		mes "我曾經看過一群狼吞下那些巨大的懶熊";
 		next;
-		mes "[Sonya]";
+		mes "[索尼亞]";
 		mes "狼群比牠們看起來還要團結. 如果牠們其中一隻被攻擊，周圍附近的狼將會跑來幫助牠.";
 		next;
-		mes "[Sonya]";
+		mes "[索尼亞]";
 		mes "我想了一下，如果你真的想與牠們戰鬥的話. 請小心: 不要讓自己被圍住!";
 		close;
 	}
 }
 
-alberta,93,174,2	script	Grandmother Alma	103,{
-	mes "[Grandmother Alma]";
-	mes "Some time ago,";
-	mes "a derelict ship";
-	mes "drifted into";
-	mes "Alberta harbour.";
+alberta,93,174,2	script	老奶奶 歐瑪	103,{
+	mes "[老奶奶 歐瑪]";
+	mes "前些日子,";
+	mes "一艘廢棄的船";
+	mes "漂流至艾爾貝塔港灣";
 	next;
-	mes "[Grandmother Alma]";
-	mes "Hoping to save any survivors, some of the townspeople ventured into the ship. However, they all ran out terrified, saying that corpses were walking around inside the ship.";
+	mes "[老奶奶 歐瑪]";
+	mes "一些鎮民希望能夠拯救任何生還者，於是進入了船內，然而，他們卻全都害怕的逃了出來，說船內到處有死屍行走著";
 	next;
-	mes "[Grandmother Alma]";
-	mes "The ship was also packed with dangerous marine organisms, and they couldn't get inside, even if they wanted to.";
+	mes "[老奶奶 歐瑪]";
+	mes "這艘船內也住有危險的海洋魔物，讓他們想進去內部也沒辦法.";
 	next;
-	mes "[Grandmother Alma]";
-	mes "We couldn't do anything about that ominous looking ship, and just left it as it was. Nowadays, exploration teams try to enter that ship and wipe out its monsters.";
+	mes "[老奶奶 歐瑪]";
+	mes "過去，我們對那艘看似受詛咒的沉船無能為力，只能由它停在那；現在，探險隊正嘗試去進入那艘船並且消滅那些魔物.";
 	next;
-	mes "[Grandmother Alma]";
-	mes "So it might be a good experience for a young person like yourself to be a recruit. But, it's still not worth risking your life if you're not strong enough.";
+	mes "[老奶奶 歐瑪]";
+	mes "所以對你這種年輕人來說，成為冒險隊徵募的新兵，會是很好的經驗，但如果你本身實力不夠，這不值得你冒著生命危險.";
 	close;
 }
 
-alberta,189,151,5	script	Fisk	4W_SAILOR,{
-	mes "[Fisk]";
-	mes "Ahoy mate,";
-	mes "where'd ya";
-	mes "wanna go?";
+alberta,189,151,5	script	費斯科	4W_SAILOR,{
+	mes "[費斯科]";
+	mes "喂～夥計,";
+	mes "想去哪兒呀?";
 	next;
-	switch(select("Sunken Ship -> 250 zeny.","Izlude Marina -> 500 zeny.","Never mind.")) {
+	switch(select("沉沒之船 -> 250 戒尼.","依斯魯德碼頭 -> 500 戒尼.","沒事.")) {
 	case 1:
 		if (Zeny < 250) {
-			mes "[Fisk]";
-			mes "Hey now, don't try to cheat me! I said 250 zeny!";
+			mes "[費斯科]";
+			mes "夥計，你耍我啊，我說250戒尼！";
 			close;
 		}
 		Zeny = Zeny - 250;
@@ -209,8 +207,8 @@ alberta,189,151,5	script	Fisk	4W_SAILOR,{
 		end;
 	case 2:
 		if (Zeny < 500) {
-			mes "[Fisk]";
-			mes "Ain't no way yer getting there without the 500 zeny first!";
+			mes "[費斯科]";
+			mes "沒拿到500戒尼之前，我可不能帶你過去";
 			close;
 		}
 		Zeny = Zeny - 500;
@@ -220,95 +218,86 @@ alberta,189,151,5	script	Fisk	4W_SAILOR,{
 			warp "izlude",176,182;
 		end;
 	case 3:
-		mes "[Fisk]";
-		mes "Alright...";
-		mes "Landlubber.";
+		mes "[費斯科]";
+		mes "好吧...";
+		mes "旱鴨子.";//Landlubber意指菜鳥水手、沒出過海的人，或對出航感到恐懼的人，故而翻成旱鴨子
 		close;
 	}
 }
 
-alb2trea,39,50,6	script	Fisk#a2t	4W_SAILOR,{
-	mes "[Fisk]";
-	mes "So you wanna head back to the mainland in Alberta, eh?";
-	next;
-	if (select("Yes please.","I changed my mind.") == 1)
+alb2trea,39,50,6	script	費斯科#a2t	4W_SAILOR,{
+	mes "[費斯科]";
+	mes "所以你想掉頭回去艾爾帕蘭本地了, 嗯?";
+	next;//拜託了，幫我撐10秒!
+	if (select("是的 拜託了.","我改變心意了.") == 1)
 		warp "alberta",192,169;
 	close;
 }
 
-alberta,195,151,2	script	Paul	4_M_04,{
-	mes "[Paul]";
-	mes "Good day~";
-	mes "Would you like";
-	mes "to join the";
-	mes "exploration team";
-	mes "of the Sunken Ship?";
+alberta,195,151,2	script	保羅	4_M_04,{
+	mes "[保羅]";
+	mes "美好的一天~";
+	mes "你想不想加入沉沒之船的冒險隊呢？";
 	next;
-	mes "[Paul]";
-	mes "Oh! Before you join, I must warn you. If you're not that strong, you may not want to go.";
+	mes "[保羅]";
+	mes "噢! 在你加入之前，我必須警告你. 如果你實力不夠，你不會想進去裡面的.";
 	next;
-	mes "[Paul]";
-	mes "So, want";
-	mes "to sign up?";
-	mes "The admission";
-	mes "fee is only";
-	mes "200 Zeny.";
+	mes "[保羅]";
+	mes "所以，考慮得如何？";
+	mes "加入只需要繳 200 戒尼的費用";
 	next;
-	switch(select("Sign me up!","Uh, no thanks.")) {
+	switch(select("讓我加入!","啊, 不用了 謝謝.")) {
 	case 1:
 		if (Zeny < 200) {
-			mes "[Paul]";
-			mes "It seems you don't have the money, my friend. But please come back when you're able to pay.";
+			mes "[保羅]";
+			mes "看起來你並沒有足夠的錢，等你可以付之後再回來找我吧.";
 			close;
 		}
 		Zeny = Zeny - 200;
 		warp "alb2trea",62,69;
 		close;
 	case 2:
-		mes "[Paul]";
-		mes "Alright, well...";
-		mes "I'll be around";
-		mes "if you change";
-		mes "your mind.";
+		mes "[保羅]";
+		mes "好吧, 嗯...";
+		mes "我會一直在這";
+		mes "如果你改變心意的話，再來找我吧";
 		close;
 	}
 }
 
-alberta,190,173,4	script	Phelix	4_M_03,{
-	mes "[Phelix]";
+alberta,190,173,4	script	菲力克斯	4_M_03,{
+	mes "[菲力克斯]";
 	if ((MaxWeight - Weight) < 10000) {
-		mes "Wait a moment!!";
-		mes "You have brought too many things!";
-		mes "You cannot accept any more items!";
-		mes "Please reduce the amount of items,";
-		mes "then come see me again.";
+		mes "等等!!";
+		mes "你已經帶了太多東西在身上!";
+		mes "減少身上物品的數量，再來找我吧!";
 		close;
 	}
 	if (@event_zelopy == 0) {
-		mes "The hell are you doing here?";
-		mes "There is nothing you can get for free on this ship, if you want somethin', work for it!!";
+		mes "沒事在這做啥?";//外國沒有三小，故不翻成三小
+		mes "在船上，沒有白吃的午餐，你想要什麼，那就得努力幹活！";
 		next;
-		mes "[Phelix]";
-		mes "Hmm, so why don't you bring me 10 jellopies and I will give 1 potion. How's that sound?";
-		mes "Or if that's too hard for your pansy ass, 3 jellopies for 1 Carrot.";
+		mes "[菲力克斯]";
+		mes "嗯...給我10個傑勒比結晶，我就給你一瓶紅色藥水，聽起來如何?";
+		mes "或者對你這娘們來說太難的話，3個傑勒比結晶換一個胡蘿蔔.";
 		next;
-		mes "[Phelix]";
-		mes "If you're interested in my offer, get me the stuff I mentioned.";
+		mes "[菲力克斯]";
+		mes "如果你對我的提議有興趣，就給我提到的東西吧!.";
 		@event_zelopy = 1;
 		close;
 	}
-	mes "Hmm.. you want to exchange jellopies for Red Potions or some Carrots eh? Well.. which one?";
+	mes "嗯.. 你想用傑勒比結晶煥紅色藥水還是胡蘿蔔，哪一個？";
 	next;
-	switch(select("Red Potions please.","Carrots please.")) {
+	switch(select("紅色藥水 麻煩了.","胡蘿蔔 麻煩了.")) {
 	case 1:
-		mes "[Phelix]";
-		mes "Alright...";
-		mes "Let's see";
-		mes "what'cha got...";
+		mes "[費力克斯]";
+		mes "好...";
+		mes "讓我瞧瞧";
+		mes "你給了什麼...";
 		next;
 		mes "[Phelix]";
 		if (countitem(909) < 10) {
-			mes "Hey! Weren't you listening?. I said 10 jellopies for 1 Red Potion.. are ya deaf?";
+			mes "嘿! 你聽不懂嗎？ 我說10個傑勒比結晶換一瓶紅色藥水，你耳聾了?";
 			close;
 		} else {
 			.@max = countitem(909)/10;
