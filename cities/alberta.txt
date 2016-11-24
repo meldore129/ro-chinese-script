@@ -279,115 +279,114 @@ alberta,190,173,4	script	菲力克斯	4_M_03,{
 		next;
 		mes "[菲力克斯]";
 		mes "嗯...給我10個傑勒比結晶，我就給你一瓶紅色藥水，聽起來如何?";
-		mes "或者對你這娘們來說太難的話，3個傑勒比結晶換一個胡蘿蔔.";
+		mes "或者對你這娘們來說太難的話，3個傑勒比結晶換一個紅蘿蔔.";
 		next;
 		mes "[菲力克斯]";
 		mes "如果你對我的提議有興趣，就給我提到的東西吧!.";
 		@event_zelopy = 1;
 		close;
 	}
-	mes "嗯.. 你想用傑勒比結晶煥紅色藥水還是胡蘿蔔，哪一個？";
+	mes "嗯.. 你想用傑勒比結晶煥紅色藥水還是紅蘿蔔，哪一個？";
 	next;
-	switch(select("紅色藥水 麻煩了.","胡蘿蔔 麻煩了.")) {
+	switch(select("紅色藥水 麻煩了.","紅蘿蔔 麻煩了.")) {
 	case 1:
-		mes "[費力克斯]";
+		mes "[菲力克斯]";
 		mes "好...";
 		mes "讓我瞧瞧";
 		mes "你給了什麼...";
 		next;
-		mes "[Phelix]";
+		mes "[菲力克斯]";
 		if (countitem(909) < 10) {
-			mes "嘿! 你聽不懂嗎？ 我說10個傑勒比結晶換一瓶紅色藥水，你耳聾了?";
+			mes "嘿!我說10個傑勒比結晶換一瓶紅色藥水，你耳聾了?";
 			close;
 		} else {
 			.@max = countitem(909)/10;
-			mes "Hmm, not bad...";
-			mes "How many potions";
-			mes "do you want to get?";
+			mes "嗯, 不錯...";
+			mes "你想換幾瓶藥水?";
 			next;
-			switch(select("As many as I can, please.","I want this many.","Never mind, I like my jellopy.")) {
+			switch(select("能換多少就換多少, 麻煩了.","我想要這個數量.","還是算了, 我愛我的傑勒比結晶.")) {
 			case 1:
 				delitem 909,.@max*10;// Jellopy
 				getitem 501,.@max;// Red_Potion
 				break;
 			case 2:
-				mes "[Phelix]";
-				mes "I'm not giving you more then 100 at a time so don't bother, OK? If you don't want any, just say '0'.";
-				mes "Right now, the most you can get is " + .@max + " but remember, 100 at most, you want to break my back?.";
+				mes "[菲力克斯]";
+				mes "我不能一次給你超過100瓶，如果你都不想要，輸入0即可";
+				mes "現在, 最多你可以換 " + .@max + " 瓶，一次最高100，除非你想累死我的背";
 				input .@amount;
 				next;
-				mes "[Phelix]";
+				mes "[菲力克斯]";
 				if (.@amount <= 0) {
-					mes "Much obliged, come again anytime.";
+					mes "非常感謝, 隨時再來.";
 					close;
 				}
 				if (.@amount > 100) {
-					mes "Hey, what'd I say? 100 at a time at most, you're trying to kill me aren't you!";
+					mes "嘿, 沒聽見我說的? 一次最多100瓶, 你想累死我是吧!";
 					close;
 				}
 				if (countitem(909) < .@amount*10) {
-					mes "Hmm, it looks like you don't have enough. Go get more jellopies if you want anything else from me.";
+					mes "嗯，看起來你的傑勒比結晶不夠，如果你想要從我這得到任何東西，那就去蒐集更多吧!";
 					close;
 				}
 				delitem 909,.@amount*10;// Jellopy
 				getitem 501,.@amount;// Red_Potion
 				break;
 			case 3:
-				mes "[Phelix]";
-				mes "No problem,";
-				mes "see you next time.";
+				mes "[菲力克斯]";
+				mes "沒問題,";
+				mes "下次再來.";
 				close;
 			}
-			mes "[Phelix]";
-			mes "There you go! As I promised. Don't go suckin' them all down at once.";
+			mes "[菲力克斯]";
+			mes "交易完成，就如我所承諾的! 不要一次都喝光了.";//粗話
 			close;
 		}
 	case 2:
-		mes "[Phelix]";
-		mes "Alright, let's see what ya got...";
+		mes "[菲力克斯]";
+		mes "好吧, 讓我瞧瞧你給了什麼...";
 		next;
-		mes "[Phelix]";
+		mes "[菲力克斯]";
 		if (countitem(909) < 3) {
-			mes "Hmm, look pansy ass, I said 3 jellopies for 1 Carrot.. got it?";
+			mes "嗯，瞧你這娘們, 我說三個傑勒比結晶換一個紅蘿蔔，你有帶來嗎？";
 			close;
 		}
 		.@max = countitem(909)/3;
-		mes "Not too bad pansy...";
-		mes "How many do you want?";
+		mes "還不賴啊...娘娘腔...";
+		mes "你想要多少?";
 		next;
-		switch(select("As many as I can get, please","I want this many.","Never mind, I like my jellopy.")) {
+		switch(select("能換多少就換多少，麻煩了","我想要這個數量.","還是算了, 我愛我的傑勒比結晶.")) {
 		case 1:
 			delitem 909,.@max*3;// Jellopy
 			getitem 515,.@max;// Carrot
 			break;
 		case 2:
-			mes "[Phelix]";
-			mes "Right I'm not giving you more then 100 at a time so don't bother, okay? If you don't want any, just say '0'.";
+			mes "[菲力克斯]";
+			mes "很好，我一次不能給你超過100個，懂嗎？如果你不想要，輸入0即可.";
 			input .@amount;
 			next;
-			mes "[Phelix]";
+			mes "[菲力克斯]";
 			if (.@amount == 0) {
-				mes "Alright then, see you next time.";
+				mes "好吧，那麼下次再見.";
 				close;
 			}
 			if (.@amount > 100) {
-				mes "Hey pansy ass, I said 100 at most, no more then that! I'm not going to break my back for the likes of you!";
+				mes "嘿 我說娘們，我說最多100個，不能再說了！我可不想累壞我的背，變得跟你一樣!";
 				close;
 			}
 			if (countitem(909) < .@amount*3) {
-				mes "Seems you don't have enough. Go get some more if you want anything else.";
+				mes "看來你帶的數量不夠，回去蒐集再來吧.";
 				close;
 			}
 			delitem 909,.@amount*3;// Jellopy
 			getitem 515,.@amount;// Carrot
 			break;
 		case 3:
-			mes "[Phelix]";
-			mes "Catch'ya later.";
+			mes "[菲力克斯]";
+			mes "待會見.";
 			close;
 		}
-		mes "[Phelix]";
-		mes "There you go~! As I promised. Try not to stuff yer face.";
+		mes "[菲力克斯]";
+		mes "交易完成，就如同我的承諾！. 可別吃得太撐了.";
 		close;
 	}
 }
